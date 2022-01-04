@@ -1,0 +1,73 @@
+                                            <!--Lista-->
+
+<h1>Trabalhando com Listas</h1>
+<h2>Lista Ordenada</h2>
+<p>Basicamente uma lista ordenada se trata de tarefas a serem executadas que possue uma ordem certa de execução 
+nesse caso utilizamos essa modelo de lista caso ten-se a nescessidade de acresentar mais alguma tarefa sem quebrar a orem da lista, 
+para definirmos a lista ordenada e nescessario utlizarmos a tag "ol" basicamente essa tag ira definir a ordem da lista.
+Os itens da lista devem ser armasenados dentro da tag "li" <br>
+Ex: 
+    <ol>
+        <h3>Carros</h3>
+        <li>Gol</li>
+        <li>Celta</li>
+        <li>Palio</li>
+        <li>Uno</li>
+        <li>Corola</li>
+        <li>Cruze</li>
+    </ol><br>
+Observa-se que utilizamos a tag "ol" para ordenar os itens da lista e utilizamos a tag "li" para definir os itens da lista <br>
+Obs: pode se mudar o metodo de ordenagem da lista alterando o parametro "type" dentro da tag 'ol' ou seja com isso ao invez da tag "ol" gerar uma ordenação numerica podemos definir outros padrões <br>
+Ex: 
+    <ol type="I">
+        <h3>Motos</h3>
+        <li>Titã</li>
+        <li>XJ6</li>
+        <li>XRE</li>
+        <li>Broz</li>
+    </ol><br>
+Observa-se que o parametro "type" da tag "ol" foi alterado, com isso acabou gerando uma alteração na forma de ordenação da lista 
+</p><hr>
+<h2>Lista não ordenada</h2>
+<p>Basicamente a lista não ordenada e similar a lista ordenada, o seu diferencial e que com ela definimos tarefas a serem executadas porem não existe uma ordem certa de execução, para definirmos essa lista ao invez de se utilizar a tag "ol" utilizamos a tag "ul"<br>
+Ex: 
+    <ul>
+        <h3>Alimentos</h3>
+        <li>Pão</li>
+        <li>Carne</li>
+        <li>Queijo</li>
+        <li>manteiga</li>
+    </ul><br>
+Obs: Assim como na tag "ol"  podemos modificar o "type" da tag "ul" tambem 
+</p><hr>
+<h2>Lista Aninhadas</h2>
+<p>Basicamente a lista aninhada se trada de uma lista comum (ordenada ou não ordenada) que possue outra lista dentro dela mesma <br>
+Ex: 
+    <ol>
+        <h3>Linguagens de programação</h3>
+        <li>Antigas</li>
+        <ul>
+            <li>C#</li>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+        <li>Novas</li>
+        <ul>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Vue.js</li>
+        </ul>
+    </ol><br>
+Observa-se que colocamos uma lista dentro da outra ou seja nesse caso criamos uma lista aninhada 
+</p><hr>
+<h2>Lista de Definição</h2>
+<p>Basicamente uma lista de definição e como se fosse um dicionario, colocamos um termo dentro dessa lista e logo em seguida colocamos a definição desse termo, para definirmos a lista de definição e nescessario colocar a tag "dl" essa tag que ira definir a lista, para inserir um termo dentro dessa lista deve-se colocar o termo dentro da tag "dt", e para definirmos a definição <br>
+Ex: 
+    <dl>
+        <dt>Html</dt>
+        <dd>Linguagem de marcação para criação de conteudo de um site </dd>
+        <dt>Css</dt>
+        <dd>Liguagem de formatação para conteudos de um site</dd>
+    </dl><br>
+Observa-se que definimos um termo dentro da tag "dt" e logo em seguida colocamos a definição desse termo dentro da tag "dd"
+</p>

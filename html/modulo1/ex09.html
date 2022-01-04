@@ -1,0 +1,26 @@
+                                        <!--Imagens Dinamicas-->
+
+<h1>Imagens que se adapitam sozinhas</h1>
+
+<p>Tente abrir essa imagens em outros aparalehos como "tablestes ou celular" ou aumente e reduza a tela do seu navegador <br>
+Para criar essa interação dinamica responsiva das imagens e nescessario utilizar a tag de formatação de imagens "picture" e inserir a imagem dentro dela <br>
+Com essa tag podemos inserir imagens dentro dela e atravez dela podemos gerar uma resposividade entre as imagens para diversos aparelhos <br> EX: 
+</p>
+
+<h2>Gerando responsividade nas imagens</h2>
+
+<picture>
+    <source media="(max-width: 725px)" srcset="../../img/pequeno.png" type="image/png">
+    <source media="(max-width: 1025px)" srcset="../../img/medio.png" type="image/png">
+    <img src="../../img/grande.png" alt="imagem grande">
+</picture><br><br>
+
+<p>
+Para gerar responsividade e nescesario chamar a tag filho da tag "picture" no caso a tag "source", essa tag possue alguns parametros que devem ser preenchidos para que aja a interação dinamica da imagem <br>
+1º media: nesse parametro podemos definir o tamanho maximo ou minimo que a pagina podera receber nesse caso e interessante definirmos o tamanho maximo, nesse caso deve se colocar o tamanho maximo da imagem que esta sendo inserida dentro da pagina <br>
+2º srcset : nesse parametro voce ira definir onde se encontra o arquivo da imagem a ser inserida <br>
+3º type : defini o tipo de arquivo a ser enviado pro navegador nesse caso se esse arquivo e uma arquivo de imagem e qual e a sua extenção se e (png, jpg)<br><br>
+Obs: basicamente a tag "source" tem como objetivo definir uma imagem que seja capaz do ususario ter visibilidade ou seja nesse caso, caso o navegador esteja com uma tela menor do que o tamanho que foi definido dentro do parametro "media" ele ira chamar a imagem que esta contidade dentro do parametro "srcset" sendo assim gerando uma responsividade no site 
+</p>
+<p>dentro da tag "picture" pode-se ter varias tags "source" definindo um modelo de imagem para cada tela diferente ou seja caso mude de um computador para um tablet e nescessario chamar a tag "source" para gerar essa reposividade e se tiver a nescessidade de abrir o site no celular deve se criar outra tag "source" definindo essa interatividade <br>
+Obs: no caso de definir o "source" para aparelhos pequenos ele deve vir em primeiro na pagina posi o navegador faz a leitura escalonavel </p>

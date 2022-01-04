@@ -1,0 +1,24 @@
+                                    <!-- Trabalhando com links -->
+
+<h1>Utilizando links externos</h1>
+<p>voce pode acessar o eu repositorio : <a href="https://github.com/wallison168">github</a><br>
+Obs: ao utilizar links externo e ideal definir 2 parametros para melhor compreenção do codigo <br>
+1º target : utilizando o parametro "target" com o valor "_blank" ao invez do link sobrescrever a pagina atual ou seja sair da pagina atual para ir ao destino do link ele ira abrir o endereço do link em outra pagina <br>
+2º rel : nesse parametro voce ira definir o tipo do link se ele e um link externo ou interno nesse caso por se tratar de link externo ele recebe o valor "external" </p>
+<p>Ex: <br>
+links externos sem parametros "target, rel" : <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo"> curso em video </a><br>
+links externos com o uso dos parametros "target, rel" : <a href="https://www.youtube.com/c/cfbcursos" target="_blank" rel="external"> cfb cursos</a> </p>
+<hr>
+<h2>Utilizando liks internos</h2>
+<p>acessando link interno para produzir : <a href="ex04.html" rel="next">imagens</a><br>
+nesse caso definimos o valor do parametro "rel" como "next" ou seja nesse caso o navegador ira identificar que ao clicar nesse link ele ira direcionar o usuario para a proxima pagina </p>
+<hr>
+<h3>Utilizando links internos dentro de outras pastas</h3>
+<p>basicamente esse mecanismo e similar a chamada de link interno normal, o seu diferencial e que na hora de chamar o link deve-se chamar a pasta aonde o link se encontra <br>
+EX: <a href="teste/link.html">click aqui</a></p><hr>
+<h4>Utilizando links para download</h4>
+<p>basicamente o link para download e similar aos demais links, com isso basta fazer a chamado do arquivo para download <br>
+Ex : baixe aqui : <a href="../css/CapituloCSS.pdf">pdf css3</a><br>
+pode ocorrer casos do navegador não começar o download mas sim abrir o arquivo diretamente no navegador, caso aconteça isso e indicado mandar o aquivo de download zipado <br>
+Ex2: baixe aqui : <a href="../css/CapituloCSS.zip" type="application/zip" download="CapituloCSS.zip">pdf css3</a><br>
+para que haja corretamente o download e nescessario definir o tipo do arquivo nesse caso colocamos o valor dentro do "type" "application/zip" e colocar o parametro "download" com o nome do arquivo assim como no exemplo acima </p>

@@ -1,0 +1,46 @@
+                                            <!-- Inserindo Videos -->
+
+<h1>Colocando videos dentro da pagina web</h1>
+
+<h2>Inserindo videos hospedado localmente </h2>
+
+<p>Esse video esta hospedado localmente dentro do meu proprio servidor </p>
+
+<p>Para inserir um video dentro da pagina web e nescessario chamar a tag "video" dentro dessa tag voce ira definir os valores de alguns parametros <br>
+1º src : local onde o arquivo do video se encontra <br>
+2º width : usado para definir a largura que o video ira ocupar dentro da pagina <br>
+3º height : usado para definir a autura do video <br>
+4º controls: atravez dele que o video ira mostrar os comando de "play", nesse parametro não tem a nescessidade de se colocar um valor <br>
+5º loop : com esse parametro o seu video tera uma efeito similar a um gif ou seja assim que o video para de reproduzir ele ira inicializar novamente
+Ex: </p>
+
+<video src="../../img/video1.mp4" height="500" width="500" controls loop></video><br>
+
+<p>Obs: Alguns navegadores não suportão sertos tipos de extensão de arquivos ou seja para não jerar conflito de compatibilidade e ideal inserir 3 videos do mesmo porem com extenções diferente caso aja caso do navegar não conseguir suportar alguma extenção <br>
+Ex: 2</p>
+
+<video controls height="500"> 
+    <source src="../../img/video2.webm" type="video/webm">
+    <source src="../../img/video3.mkv" type="video/mkv">
+    <source src="../../img/video1.mp4" type="video/mp4">
+    <p>O seu navegador não e compativel com nenhum desses arquivos de video </p>
+</video>
+
+<p>Caso queira colocar uma imagem antes do video inicalizar como uma capa pro video basta chamar o parametro "poster" dentro da tag "video" e passar o endereço da imagem a qual voce queira colocar como capa do video <br>
+Ex: 3</p>
+
+<video src="../../img/video1.mp4" height="500" width="500" controls poster="../../img/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg"></video><br>
+<hr>
+
+<h3>Aviso</h3>
+
+<p>Obs: videos hospedados atravez da tag "video" pode gerar um auto consumo de internet ou seja gera um grande trafego de conteudo <br>
+Caso queira economisar no gasto de recursos para hospedar videos pode-se utilizar plataformas de videos para gerarem um video incorporado ou seja nesse caso voce estara utilizando um video no seu site porem não vai esta utilizando a sua hospedagem </p>
+<p>Um desses recursos e o proprio "youtube" com ele voce pode pegar o veideo que desejar e colocar dentro da sua pagina, para isso basta selecionar o video desejado, ir em compartilhar e ir na opção "incorporar" com isso ele ira gerar um codigo html para que possa ser utilizado dentro da pagina <br>
+Ex: 4</p>
+
+<h2>Inserindo videos de hospedagens externas</h2>
+
+<h3>Inserindo videos do YouTube dentro da pagina</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
