@@ -35,3 +35,61 @@ Obs: basicamente existe dois metodos diferentes de definir um tamanho de uma fon
 Obs: para definir tamanho das fontes no css e recomendado utilizar dois padrões ("px" e "em"). <br>
 O tamanho da fonte pre definido pelo proprio navegar e de "16px" sendo assim o valor "1em corresponde a == 16px"
 </p>
+
+<h4>Definindo o peso da fonte</h4>
+
+<p>Basicamente o peso da fonte se da pelo quantidade do contraste da fonte ou seja se a fonte vai ser mais leve ou se ele vai ser mais forçada <br>
+resumidamente o peso da fonte define se o texto sera mais fraco ou seja mais claro ou se ele sera mais forte ou seja com um auto teor de negrito <br>
+Obs: Existem 4 maneiras de definir o peso da fonte, para inserir o peso da fonte dentro do css e nescessario chamar o parametro <code>"font-weight"</code> basicamente atravez desse atributo podemos definir o peso do texto inseridom, esse parametro recebe 4 valores pra definir o peso da fonte cada valor define um peso diferente <br>
+1º lighter: basicamente esse valor definin uma fonte mais leve ou seja mais fraca <br>
+2º normal : basicamente esse e o peso padrão que as fontes vem no geral <br>
+3º bol : basicamente esse valor aplica um negrito na fonte ou seja deixa ele com um aspecto mais forte <br>
+4º bolder : basicamente esse valor e similar ao valor "bold" o seu diferencial e que ele aplica um negrito mais forte no texto <br>
+Obs: pode se definir o peso da fonte utilizando valores numericos de (100 - 900) <br>
+EX: 
+</p>
+
+<p style="font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit placeat quo quibusdam voluptatem doloremque. Impedit, quod! Ipsam consequuntur dolorum, dignissimos deleniti delectus provident vel laboriosam ex, rem perspiciatis quae.</p><hr>
+<p style="font-weight: normal;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid reprehenderit eligendi nesciunt, officiis corporis similique repudiandae aliquam sed incidunt officia sunt doloribus deleniti hic unde laudantium harum exercitationem quo quia.</p><hr>
+<p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut suscipit nam dolor nobis ad animi provident iusto! A quae minima deserunt incidunt natus aliquam fuga voluptate iure nam esse.</p><hr>
+<p style="font-weight: bolder;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde earum quibusdam incidunt soluta hic! Quibusdam odit ducimus doloribus tempore, quisquam, placeat accusantium quae eveniet officia, a vel assumenda quo.</p><hr>
+<p style="font-weight: 300;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum blanditiis id saepe dolorem! Fugit blanditiis nulla eius dicta, laudantium veritatis ullam? Nihil exercitationem adipisci expedita nesciunt vel ipsam accusamus.</p><hr>
+
+<h4>Definido o estilo da fonte</h4>
+
+<p>Basicamente podemos definir o estilo da fonte (negrito, italico...) utilizando o css para isso basta chamar a propriedade <code>"font-style"</code> atravez desse parametro podemos definir o tipo da fonte <br>
+EX: <br><span style="font-style: italic;">Exemplo 1</span><br><samp style="font-style: oblique;">Exemplo 2</samp></p>
+
+<h4>Sublinhando texto via css</h4>
+
+<p>Basciamente para sublinhar um texto via css basta utilizar o seguinte parametro <code>"text-decoration"</code> atraves desse parametro podemos definir como a fonte sera decorada <br>
+EX: <br>
+<span style="text-decoration: underline;"> Sublinhando o texto </span></p>
+
+<h1>Impotante</h1>
+
+<p>Podemos definir toda formatação feita nos exemplos acima em uma unica linha de codigo <br>
+ao invez de utilizar varias linha um definindo uma formatação diferente da outra podemos apenas utilizar um linha de codigo para definir irsso <br>
+Ex : Formatação css com multiplas linhas de codigo <br>
+<pre>
+    <code>
+        span{
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 2em;
+            font-style: italic;
+        }
+    </code>
+</pre><br>
+Ex : Formatação css com uma linha de codigo <br>
+Obs = Para definir varias formatção em uma unica linha de codigo e nescessario seguir uma ordem de chama para cada parametro <br>
+Ordem de chama para fontes <code>("font-style" -> "font-weight" -> "font-size" -> "font-family")</code><br>
+Basicamente deve-se seguir a ordem dos parametros definida logo acima
+<pre>
+    <code>
+        font: italic bold 2em 'Times New Roman', Times, serif ;
+    </code>
+</pre><br>
+Obs: observa-se que ambos os 2 exemplos realizam a mesma formatação porem o segundo exemplo possue a menor quantidade de linha de codigo 
+</p>
+
