@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h1, h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+
+        }
+        span{
+            display: block;
+            background-color: rgba(0, 202, 118, 0.822);
+            color: rgba(180, 3, 3, 0.815);
+        }
+        #difere{
+            background-color: rgba(3, 3, 216, 0.678);
+            color: rgba(4, 224, 177, 0.747);
+        }
+        .form{
+            background-color: rgba(163, 1, 1, 0.705);
+            color: rgba(190, 190, 1, 0.753);
+        }
+        .pseudo:hover{
+            background-color: rgb(255, 136, 0);
+        }
+        a{
+            color: rgba(1, 206, 1, 0.671);
+            text-decoration: none;
+        }
+        a:visited{
+            font-weight: bolder;
+            color: rgba(128, 0, 0, 0.753);
+        }
+        div > p:hover {
+            color: rgba(248, 4, 248, 0.753);
+        }
+    </style>
+    <title>Seletores</title>
+</head>
+<body>
+                                                <!--Seletores css-->
+
+
+<h1>Utilizando Seletores em Css</h1>
+
+<p>Basicamente os seletores em css tem um papel uito importante pois com eles podemos definir formatações de tags com mais facilidade <br>
+Um seletor css e utilizado quando se tem a nescessidade de realizar uma formatação em uma ou mais tags em espesifico ou seja em uma tag desejada <br>
+imagine o seguinte modelo, temos varias tags de paragrafo "p" e queremos realizar uma formatação em apenas uma ou mais tags desse tipo poremnão em todas no geral utilizariamos o css inline porem esse metodo não e recomendado, para isso utilizamos o css externo pois e o padrão mais utilizado e para selecionar a tag em expecifico utilizamos os seletores css. <br>
+Basicamente existe 4 maneiras de se definir um seletor css <br><br>
+1º id-(#) : Basicamente com esse seletor podemos definir formatações css em uma unica tag em expecifico <br><br>
+2º classe-(.) : Basicamente com esse seletor podemos definir formatações em uma ou mais tags definidas <br><br>
+3º Pseudo_Classe-(:) : As "Pseudo_Classe" basicamente são funcionalidades-(eventos) pre definidos que utilizamos para gerar certas formatações ou seja as pseudo classe ja estão pre-definidas basta definirmos uma formatção em espefico e assim que a funcionalidade/evendo dessa pseudo-classe for executado essa pseudo-classe ira realizar a formatação definida <br><br>
+4º Filho de um elemento-(>) : Basicamente dentro das css para definir uma formatação de um elemento que esteja contidentro dentro de outro elemento ou seja um elemento filho basta utilizar o parametro ">" esse parametro define que o elemento e filho de outro  
+</p><hr>
+
+<p>Ex: Aplicando formatção da forma padrão e utilizando os seletores </p>
+
+<h2>Formatação sem seletores</h2>
+
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam pariatur laudantium. Corrupti dolore in voluptatum! At quam quis, beatae aperiam soluta excepturi atque doloribus nihil eum. In, laborum eligendi?</span>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam pariatur laudantium. Corrupti dolore in voluptatum! At quam quis, beatae aperiam soluta excepturi atque doloribus nihil eum. In, laborum eligendi?</span>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam pariatur laudantium. Corrupti dolore in voluptatum! At quam quis, beatae aperiam soluta excepturi atque doloribus nihil eum. In, laborum eligendi?</span><hr>
+
+<h2>Formatação com o seletor por "id"</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem alias, fugiat totam repudiandae facilis, hic numquam, ipsa cumque incidunt nesciunt? Vero repellat ipsam tempora tenetur quam ex molestias aspernatur.</p>
+<p id="difere">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem alias, fugiat totam repudiandae facilis, hic numquam, ipsa cumque incidunt nesciunt? Vero repellat ipsam tempora tenetur quam ex molestias aspernatur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem alias, fugiat totam repudiandae facilis, hic numquam, ipsa cumque incidunt nesciunt? Vero repellat ipsam tempora tenetur quam ex molestias aspernatur.</p><hr>
+
+<h2>Formatação com o seletor por "classe"</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p>
+<p class="form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p>
+<p class="form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p><hr>
+
+<h2>Formatação com o seletor por "Pseudo_Classe"</h2>
+
+<p class="pseudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p>
+<p class="pseudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p>
+<p class="pseudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae autem, sunt dignissimos tempore quia voluptatem quam alias quos eius atque. Minus minima dolor veniam doloremque, sed suscipit animi reprehenderit.</p>
+<p>link par saber tudo sobre os eventos de cada valor que uma Pseudo_Classe pode fazer -> : <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" target="_blank" rel="external">Pseudo_Classe</a></p><hr>
+
+<h2>Formatação com seletor por "Elementos Filhos"</h2>
+
+<div>
+    <h4>Utilizando elemento filho</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla eius nobis ad? Rem ipsam minima voluptatum aspernatur fuga enim! Unde quod veniam rerum, dolore eveniet earum porro pariatur a quo.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, alias esse molestiae minus quis accusamus quibusdam animi eligendi maxime magnam nihil nesciunt magni molestias nemo harum perspiciatis? Iusto, commodi voluptatem.</p>
+</div><hr>
+
+<p>Observa-se a diferença em realizar formatações css utilizando seletores ou não, observamos que a utilização dos seletores facilitam muito na hora de definirmos a formatação para um elemento em especifico </p>
+
+<p>Obs: apesar de podemos definir um unico <strong>id</strong> e utilizar ele em varias tags o ideal e utilizar o seletor "id" em uma unica formatação ou seja em uma unica tag, e utilizar o seletor por "classe" quando tiver nescessidade de realizar formatações em varias tags sendo elas do mesmo tipo ou não. <br>
+Resumindo quando tiver a nescessidade de gerar formatação em um unico elemento utiliza-se o seletor por "id" caso tenha que gerar formatações em mais de um elemento utiliza-se o seletor po "classe"</p>
+
+<p>A <strong>Pseudo_Classe</strong> basicamente e utilizado quando se tem a nescessidade de gerar uma formatação em um ou mais elementos quando uma ação/evento for chamado assim como foi definido no exemplo acima, a "Pseudo_Classe" possue varios valores e cada valor realiza um evento diferente</p>
+
+<p>Observa-se que na formatação por seletor do <strong>Elemento Filho</strong> so e aplicada no elemento seleciondado ou seja dentro da tag "div" temos duas tags filhas "h4 e p" porem selecionamos apenas a tag filha "p" para gerar apenas formatação dentro dela </p>
+
+</body>
+</html>
