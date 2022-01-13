@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            padding: 1em;
+            margin: 1em;
+            background-color: rgba(38, 142, 202, 0.616);
+        }
+        div > p{
+            text-align: center;
+            border: groove ;
+            width: 6em;
+            margin-left: 15em;
+            background-color: rgba(137, 43, 226, 0.808);
+            border-color: rgba(187, 33, 33, 0.726)
+        }
+        span{
+            background-color: rgba(36, 197, 149, 0.705);
+            border: double;
+            border-color: rgba(199, 64, 14, 0.767);
+            text-align: center;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+        a{
+            background-color: rgba(194, 194, 17, 0.829);
+            color: red;
+            margin-left: 16px;
+            border:dashed;
+            border-color: rgb(255, 102, 0);
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+    </style>
+    <title>Box</title>
+</head>
+<body>
+                                                <!--Box Model-->
+
+<h1>Trabalhando com Box Model</h1>
+
+<p>Basicamente <strong>Box Model</strong> e a representação dos container onde as informações contidas dentro da pagina estão armazenadas ou seja todas as tags são uma especie de "box (caixa)". <br>
+Basicamente existem dois tipos de "Box" ("Box-level" "Inline-level") <br>
+1º Box-Level : Basicamente o box-level e um tipo de container/cixa que possue um display em block ou seja não ha outras tags na mesma linha onde se encontra esse tipo de container, sendo assim todo o conteudo fora dessa caixa ficara uma linha a baixo dela relizando um efeito de quebra de linha. <br><br>
+2º Inline-Level : Ja o inline-level permite que conteudo seja colocados na mesma linha onde se encontra a caixa ou seja esse conteiner permite que conteudos inseridos fora dele possa fica na mesma linha onde se encontra. <br>
+</p><hr>
+<p>
+    Tags que representam o Box-Model 
+    <ol>
+        <li>Box-Level</li>
+        <ul>
+            <li>div</li>
+            <li>h1...h6</li>
+            <li>p</li>
+            <li>main</li>
+            <li>header</li>
+            <li>nav</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>footer</li>
+            <li>form</li>
+            <li>video</li>
+        </ul>
+        <li>Inline-Level</li>
+        <ul>
+            <li>span</li>
+            <li>a</li>
+            <li>code</li>
+            <li>small</li>
+            <li>strong</li>
+            <li>em</li>
+            <li>sup..sub</li>
+            <li>label</li>
+            <li>button</li>
+            <li>input</li>
+            <li>select</li>
+        </ul>    
+    </ol>
+</p><hr>
+<p>Resumindo: Box-Level são todas as tags que possuem o display em block ou seja todo conteudo fora dela ficara uma linha a baixo recebendo um quebra de linha. <br>Ja o Inline-Level permite qeu outro conteudo seja colocados na mesma linha dele <br> EX:</p>
+
+<div>
+    <p>Box_Level</p>
+</div>
+<span>Inline-Level : </span>
+<a href="#">test</a>
+
+<p>Obs: observa-se que o container do tipo "Box-Level" não permite que nenhum outro elemento que esteja fora possa ficar na mesma linha que ele. <br>
+Ja o container do tipo "Inline-Level" permite que isso aconteça</p><hr>
+
+<h2>Definição de uma Caixa</h2>
+
+<p>O Box-model tem uma definição interna no css par definir o seu espaçamento basicamente são 3 propriedades para definir o espaçamento entre o elemento dentro da caixa e os demais elementos <br>
+1º padding : Basicamente essa propriedade define o espaçamente entre o conteudo inserido dentro da "Box" e a borda <br><br>
+2º border : E o intercessor entre a padding e a margin, basicamente ele defini o tamanho da box podendo tracejar uma linha definindo o seu tamanho exato para o usuario <br><br>
+3º margin : Basicamente o margin e um espaçamento que fica fora da "Box" ou seja ele define um espaçamento entre a borda da box e o proximo elementoa ser inserido dentro da pagina </p><hr>
+
+<h2>Valores da propriedade "border"  em css</h2>
+
+<p>1º border-width : basicamente essa propriedade define a largura da borda <br><br>
+2º border-style : basicamente essa propriedade define o estilo da borda <br><br>
+3º border-color : basicamente essa propriedade define a cor da borda
+</p>
+</body>
+</html>
