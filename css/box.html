@@ -21,7 +21,7 @@
         span{
             background-color: rgba(36, 197, 149, 0.705);
             border: double;
-            border-color: rgba(199, 64, 14, 0.767);
+            border-color: rgb(36, 34, 34);
             text-align: center;
             padding-left: 8px;
             padding-right: 8px;
@@ -36,6 +36,9 @@
             padding-left: 8px;
             padding-right: 8px;
         }
+        .alert{
+            background-color: rgb(255, 0, 0);
+        }
         
     </style>
     <title>Box</title>
@@ -45,45 +48,48 @@
 
 <h1>Trabalhando com Box Model</h1>
 
-<p>Basicamente <strong>Box Model</strong> e a representação dos container onde as informações contidas dentro da pagina estão armazenadas ou seja todas as tags são uma especie de "box (caixa)". <br>
-Basicamente existem dois tipos de "Box" ("Box-level" "Inline-level") <br>
-1º Box-Level : Basicamente o box-level e um tipo de container/cixa que possue um display em block ou seja não ha outras tags na mesma linha onde se encontra esse tipo de container, sendo assim todo o conteudo fora dessa caixa ficara uma linha a baixo dela relizando um efeito de quebra de linha. <br><br>
-2º Inline-Level : Ja o inline-level permite que conteudo seja colocados na mesma linha onde se encontra a caixa ou seja esse conteiner permite que conteudos inseridos fora dele possa fica na mesma linha onde se encontra. <br>
+<p>
+    Basicamente <strong>Box Model</strong> e a representação dos container onde as informações contidas dentro da pagina estão armazenadas ou seja todas as tags são uma especie de "box (caixa)". <br><br>
+    Basicamente existem dois tipos de "Box" ("Box-level" "Inline-level") <br><br>
+    1º Box-Level : Basicamente o box-level e um tipo de container/cixa que possue um display em block ou seja não ha outras tags na mesma linha onde se encontra esse tipo de container, sendo assim todo o conteudo fora dessa caixa ficara uma linha a baixo dela relizando um efeito de quebra de linha. <br><br>
+    2º Inline-Level : Ja o inline-level permite que conteudo seja colocados na mesma linha onde se encontra a caixa ou seja esse conteiner permite que conteudos inseridos fora dele possa fica na mesma linha onde se encontra. <br>
 </p><hr>
 <p>
     Tags que representam o Box-Model 
     <ol>
         <li>Box-Level</li>
-        <ul>
-            <li>div</li>
-            <li>h1...h6</li>
-            <li>p</li>
-            <li>main</li>
-            <li>header</li>
-            <li>nav</li>
-            <li>article</li>
-            <li>aside</li>
-            <li>footer</li>
-            <li>form</li>
-            <li>video</li>
-        </ul>
+            <ul>
+                <li>div</li>
+                <li>h1...h6</li>
+                <li>p</li>
+                <li>main</li>
+                <li>header</li>
+                <li>nav</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>footer</li>
+                <li>form</li>
+                <li>video</li>
+            </ul>
         <li>Inline-Level</li>
-        <ul>
-            <li>span</li>
-            <li>a</li>
-            <li>code</li>
-            <li>small</li>
-            <li>strong</li>
-            <li>em</li>
-            <li>sup..sub</li>
-            <li>label</li>
-            <li>button</li>
-            <li>input</li>
-            <li>select</li>
-        </ul>    
+            <ul>
+                <li>span</li>
+                <li>a</li>
+                <li>code</li>
+                <li>small</li>
+                <li>strong</li>
+                <li>em</li>
+                <li>sup..sub</li>
+                <li>label</li>
+                <li>button</li>
+                <li>input</li>
+                <li>select</li>
+            </ul>    
     </ol>
 </p><hr>
-<p>Resumindo: Box-Level são todas as tags que possuem o display em block ou seja todo conteudo fora dela ficara uma linha a baixo recebendo um quebra de linha. <br>Ja o Inline-Level permite qeu outro conteudo seja colocados na mesma linha dele <br> EX:</p>
+<p>
+    Resumindo: Box-Level são todas as tags que possuem o display em block ou seja todo conteudo fora dela ficara uma linha a baixo recebendo um quebra de linha. <br>Ja o Inline-Level permite qeu outro conteudo seja colocados na mesma linha dele <br> EX:
+</p>
 
 <div>
     <p>Box_Level</p>
@@ -91,21 +97,57 @@ Basicamente existem dois tipos de "Box" ("Box-level" "Inline-level") <br>
 <span>Inline-Level : </span>
 <a href="#">test</a>
 
-<p>Obs: observa-se que o container do tipo "Box-Level" não permite que nenhum outro elemento que esteja fora possa ficar na mesma linha que ele. <br>
-Ja o container do tipo "Inline-Level" permite que isso aconteça</p><hr>
+<p>
+    Obs: observa-se que o container do tipo "Box-Level" não permite que nenhum outro elemento que esteja fora possa ficar na mesma linha que ele. <br>
+    Ja o container do tipo "Inline-Level" permite que isso aconteça
+</p><hr>
 
 <h2>Definição de uma Caixa</h2>
 
-<p>O Box-model tem uma definição interna no css par definir o seu espaçamento basicamente são 3 propriedades para definir o espaçamento entre o elemento dentro da caixa e os demais elementos <br>
-1º padding : Basicamente essa propriedade define o espaçamente entre o conteudo inserido dentro da "Box" e a borda <br><br>
-2º border : E o intercessor entre a padding e a margin, basicamente ele defini o tamanho da box podendo tracejar uma linha definindo o seu tamanho exato para o usuario <br><br>
-3º margin : Basicamente o margin e um espaçamento que fica fora da "Box" ou seja ele define um espaçamento entre a borda da box e o proximo elementoa ser inserido dentro da pagina </p><hr>
+<p>
+    O Box-model tem uma definição interna no css par definir o seu espaçamento basicamente são 3 propriedades para definir o espaçamento entre o elemento dentro da caixa e os demais elementos <br>
+    1º padding : Basicamente essa propriedade define o espaçamente entre o conteudo inserido dentro da "Box" e a borda <br><br>
+    2º border : E o intercessor entre a padding e a margin, basicamente ele defini o tamanho da box podendo tracejar uma linha definindo o seu tamanho exato para o usuario <br><br>
+    3º margin : Basicamente o margin e um espaçamento que fica fora da "Box" ou seja ele define um espaçamento entre a borda da box e o proximo elementoa ser inserido dentro da pagina 
+</p><hr>
 
-<h2>Valores da propriedade "border"  em css</h2>
+<h2>Propriedades css para Box-Model</h2>
 
-<p>1º border-width : basicamente essa propriedade define a largura da borda <br><br>
-2º border-style : basicamente essa propriedade define o estilo da borda <br><br>
-3º border-color : basicamente essa propriedade define a cor da borda
+<p>
+    <strong>Propriedade Border</strong><br>
+
+    1º border-width : basicamente essa propriedade define a largura da borda <br><br>
+    2º border-style : basicamente essa propriedade define o estilo da borda <br><br>
+    3º border-color : basicamente essa propriedade define a cor da borda <br><br>
+
+    <span class="alert">Obs:</span> Forma simplificada do operador Border <br><br>
+
+    1º border : width style color = basicamente podemos definir as 3 formatações do operador "border" passando os seus valores na ordem correta. <br>
+    Obs: deve-se seguir a ordem correta na hora de colocar os valores dentro da propriedade "border" ou seja o primeiro valor a ser inserido deve ser a largura da borda "width", o segundo valor a ser inserido deve ser o estilo da borda "style" e o ultimo valor a ser inserido deve ser a cor da borda "color" <br><br><hr>
+
+    <strong>Propriedade Padding</strong><br>
+
+    1º padding-top : basicamente essa propriedade define o espaçamento na parte superior do elemento <br><br>
+    2º padding-bottom : basicamente essa propriedade define o espaçamento na parte inferior do elemento <br><br>
+    3º padding-left : basicamente essa propriedade define o espaçamento na parte esquerda do elemento <br><br>
+    4º padding-right : basicamente essa propriedade define o espaçamento na parte direita do elemento <br><br>
+
+    <span class="alert">Obs:</span> Existem 3 formas simplificadas de se definir o Padding <br><br>
+
+    1º padding : px/em = Basicamente utilizando apenas o operador "padding" e passando apenas um valor, esse valor sera definido para os quatro cantos. <br><br>
+    2º padding : px px = Utilizando apenas o operador "padding" e passando dois valores, o primerio valor ira definir o espaçamento do canto inferior e superior ja o segundo valor ira definir o espaçamento das laterais direita e esquerda. <br><br>
+    3º padding : px px px px : Pode-se se usar o operador "padding" passando quatro valores definindo os quatro cantos, o primeiro valor irada definir o espaçamento do canto superior, o segundo valor ira definir o do canto direito, o terceiro ira definir a parte inferior e o ultimo valor vai definir a parte esquerda. <br><br><hr>
+
+    <strong>Propriedade Margin</strong>
+    1º margin-top : basicamente essa propriedade define o espaçamento na parte superior do elemento <br><br>
+    2º margin-bottom : basicamente essa propriedade define o espaçamento na parte inferior do elemento <br><br>
+    3º margin-left : basicamente essa propriedade define o espaçamento na parte esquerda do elemento <br><br>
+    4º margin-right : basicamente essa propriedade define o espaçamento na parte direita do elemento <br><br>
+
+    <span class="alert">Obs: </span> Existem funcionalidade especiais para o operador "margin" <br><br>
+
+    1º margin: auto = Utilizando apenas a propriedade "margin" com o valor "auto" isso faz com que centralize a box horizontalmente ou seja suas laterais 
+
 </p>
 </body>
 </html>
