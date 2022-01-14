@@ -1,0 +1,37 @@
+div{
+    height: 56px;
+    width: 300px;
+    padding: 1em;
+    margin: 1em;
+    border: 3px groove rgba(87, 86, 86, 0.719);
+    background-color: rgba(38, 142, 202, 0.616);
+}
+div > p{
+    margin: 20px auto 20px auto;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 3px groove rgba(201, 125, 12, 0.658);
+    width: 80px;
+    background-color: rgba(133, 211, 69, 0.699);
+}
+span{
+    background-color: rgba(36, 197, 149, 0.705);
+    margin: 1em;
+    border: 3px double black;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+a{
+    background-color: rgba(194, 194, 17, 0.829);
+    text-align: center;
+    color: red;
+    border:3px dotted rgb(161, 10, 231);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.alert{
+    background-color: rgb(255, 0, 0);
+    margin: 0px;
+}
