@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<body>
+                                                    <!--Divisões de um site-->
+
+<h1>Divisão de um site</h1>
+<p>
+    Basicamente um site e dividido por 3 tags principais na qual cada uma define a sua funcionalidade. <br>
+    Atigamente definiamos as parates do site utilizando a tag "div" e passando um "id" como identificador para a funcionalidade que a tag iria aplicar, hojem em dia existem tags semanticas que realizam essa funcionalidade ou seja não ha mais a nescessidade de se encher o site de tags do tipo "div"
+</p><hr>
+
+<h2>Tags que dividem o site</h2>
+
+<p>
+    Basicamente existem 3 tags semanticamente que definem as 3 partes de um site <br><br>
+    1º <strong>header</strong> : Basicamente essa tag define o cabeçalho do site ou seja essa tag define o menu do site. <br><br>
+    2º <strong>main</strong> : Basicamente essa tag defini o corpo do site ou seja essa tag define o conteudo que sera inserido dentro site sendo ele o conteudo principal. <br><br>
+    3º <strong>footer</strong> : Basicamente essa tag define o rodape do site ou seja os link ou conteudo sobre o desenvolvedor no final do site 
+</p><hr>
+
+<h2>Escopo de um site</h2>
+
+<p>
+    Com base nas infomações assima um site possue o seguinte escopo. <br>
+    <pre>
+        <code>
+            &#8249header&#8250
+
+                &#8249h1&#8250 Menu &#8249h1&#8260&#8250
+                &#8249nav&#8250
+                    &#8249a href="#"&#8250 Navegação do menu &#8249a&#8260&#8250
+                &#8249nav&#8260&#8250
+
+            &#8249header&#8260&#8250
+
+            &#8249main&#8250
+
+                &#8249section id="sec1"&#8250
+                    &#8249p&#8250 Conteudo 1 &#8249p&#8260&#8250
+                &#8249section&#8260&#8250
+
+                &#8249section id="sec2"&#8250
+                    &#8249p&#8250 Conteudo 2 &#8249p&#8260&#8250
+                &#8249section&#8260&#8250
+
+                &#8249section id="sec3"&#8250
+                    &#8249article&#8250 
+                        Conteudo 
+                    &#8249article&#8260&#8250
+
+                    &#8249article&#8250 
+                        Conteudo 
+                    &#8249article&#8260&#8250
+                &#8249section&#8260&#8250
+
+            &#8249main&#8260&#8250
+
+            &#8249footer&#8250
+
+                &#8249p&#8250 Rodapé &#8249p&#8260&#8250
+
+            &#8249footer&#8260&#8250
+        </code>
+    </pre>
+</p><hr>
+
+<h2>Definições de um Cabeçalho</h2>
+
+<p>
+    Basicamente a tag <strong>"header"</strong> define o cabeçalho da aplicação ou seja todo conteudo que envolve cabeçalho como ("menu", "links", "pesquisa", "logo" etc) e definido dentro dessa tag. <br><br>
+    Dentro da tag "header" definimos a tag <strong>"nav"</strong> atraves dele definimos link de navegação ou seja links e menus de um cabeçalho e definido dentro dessa tag pois ela da um sentido semantico melhor dentro da pagina por se tratar de uma tag de navegação. <br><br>
+</p>
+
+<h2>Definição do Corpo da Aplicação</h2>
+
+<p>
+    Basicamente tag <strong>"main"</strong> define o corpo da aplicação ou seja todo o conteudo a ser mostrado pro usuario sera definido detro dessa tag, essa tag traz uma semantica pro navegador ja que todo conteuido inserido dentro dela tera um sentido de "conteudo principal". <br><br>
+    Podemos separar o conteudo principal em seções ou seja separando o conteudo em topicos diferentes para realizar isso, temos que definir dentro da tag "main" a tag <strong>"section"</strong> atravez dela definimos cada seção que vai ser inserida dentro do corpo da aplicação. <br><br>
+    Dentro da tag "section" podemos utilizar a tag <strong>"article"</strong>, essa tag da um sentido pro conteudo inserido como se fosse um "artigo". <br><br>
+    Dentro da tag "article" podemos utilizar a tag <strong>"aside"</strong> as informações inseridas dentro dessa tag faz referencia ao conteudo inserido dentro da tag "article" ou seja a todo conteudo inserido dentro da tag "aside" faz referencia ao conteudo inserido dentro da tag "article" ou seja a tag "aside" tem o sentido semantico de conteudo periferico ao conteudo da tag "article", em geral o conteudo inserido dentro da tag "aside" são conteudos referente ao artigo como ("nome do altor", "resulmo" etc)
+</p>
+
+</body>
+</html>
+
+<!--
+    <p>
+        A tag <strong>footer</strong> e similar a tag "header" o seu diferencial e que ela serve para definir o rodapé da aplicação ou seja dentro dele colocaremos os conteudos complementares do site como link e conteudo referente ao equipe de desenvolvedores e outros conteudos relacionados ao site 
+    </p>
+-->
