@@ -35,3 +35,6 @@ a{
     background-color: rgb(255, 0, 0);
     margin: 0px;
 }
+code{
+    font-weight: bolder;
+}

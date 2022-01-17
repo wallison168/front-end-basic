@@ -11,6 +11,7 @@ header{
 nav{
     background-color: rgba(70, 67, 67, 0.808);
     padding: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 nav > a{
     color: white;
@@ -26,6 +27,7 @@ main{
     background-color: rgba(255, 255, 255, 0.829);
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
 }
 article{
     background-color: rgba(201, 193, 193, 0.836);
@@ -39,7 +41,10 @@ footer{
     color: white;
     text-align: center;
     margin: 0px;
-    padding: 1px;
+    padding: 4px;
 
+}
+footer > p{
+    margin: 0px;
 }
 
