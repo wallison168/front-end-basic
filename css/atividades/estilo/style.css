@@ -36,6 +36,10 @@ body{
     font-family:var(--fonte-padrao);
 }
 
+.externo::after{
+    content: '\00A0\1F517';
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 100px;
@@ -70,9 +74,8 @@ nav{
 
 nav > a{
     color: white;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     text-decoration: none;
-    padding-bottom: 5px;
     transition-duration: .5s; 
     /*basicamente o parametro "transition-duration: .5s;" ira realizar a formatação definida a baixo assim q o tempo definido dentro desse parametro for comprido*/
 }
@@ -96,26 +99,78 @@ main{
 }
 
 main h1{
-    color: var(--cor4);
+    color: var(--cor5);
     font-family:var(--fonte-android);
 }
 
 main h2{
     font-family:var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em; /*O parametro "line-height: 1.2em;" defini um espaçamento entre as linha */
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a{
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+main a:hover{
+    background-color: var(--cor2);
+    text-decoration: underline;
+    border-radius: 3px;
 }
 
 main img{
     width: 100%;
 }
 .pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.322);
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0'; /*basicamente esse parametro ira definir o efeito de "check" dentro da lista e da o espaçamento entre os elementos*/
+    list-style-position: inside; /*basicamente esse parametro vai fazer com que os elementos da lista fiquem dentro do container */
+    columns: 2; /*basicamente esse parametro ira divir a lista em duas colunas*/
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px ;
 }
 
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
 }
 
 footer a{
@@ -125,7 +180,7 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 /*Para definirmos uma variavel utilizamos o operador ("--") e declaramos o nome da variaves logo apos o operador, dentro dessa variavel definimos formatações css pre definidas para facilitar o uso do codigo.
