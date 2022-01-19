@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(250, 236, 219)
+        }
+        header{
+            background-color: white ;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        header > h1{
+            margin: 0px;
+        }
+        main{
+            background-color: white ;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: justify;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+    <title>Responsividade</title>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com Responsividade</h1>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab temporibus autem minima architecto nostrum ut delectus atque illo perferendis laborum dolorem porro cumque eos, necessitatibus iure facilis dignissimos? Dolorem?
+        </p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="atividades/imagens/irina-blok-pq.jpg">
+            <img src="atividades/imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt expedita quaerat qui laboriosam accusamus saepe adipisci fuga, aut labore! Recusandae esse blanditiis beatae magnam, cum perspiciatis. Cum, corrupti quis.
+        </p>
+    </main>
+</body>
+</html>
+
+<!-- 
+    Basicamente utilizamos a responsividade para que o site desenvolvido para aparelhos com telas grandes possa ter uma boa visibilidade em aparelhos de tela pequena ou seja utilizamos um padrão que define um tamanho minimo e um tamanho maximo de visibilidade que os elementos inseridos dentro do site tera para que o usuario possa ter uma boa navegação pelo site.
+
+    Para isso precisamos definir o tamanho minimo da tela e o tamanho maximo, para isso utilizamos os seguintes parametros css.
+    ("min-width: px" "max-width: px;") atravez desses parametros podemos definir a largura minima e maxima que o conteudo podera ficar dentro da tela.
+
+    Observa-se que por mais que tenhamos definido um tamanho minimo e maximo de visualização pro usuario a imagem continua saindo fora da area que foi definida para resolver esse problema existe 2 formas.
+
+    1º width: 100%; = A primeira forma e utilizando o parametro css "width" e passando o valor de "100%" com isso estamos definindo que a imagem vai ocupar "100%" da largura do container da qual ela foi colocada sendo assdim dando um aspecto de responsividade para o site.
+
+    2º picture : Basicamente podemos definir um tamanho "maximo ou minimo" dentro dessa tag para qundo chegar a esse tamanho ele trocar para outra imagem assim como foi estudado anteriormente no modulo 1.
+
+    Obs: e interessante utilizarmos as 2 formas para aplicar responsividade dentro de uma imagem ou seja colocar a formatação da largura em 100% "width: 100%;" e utilizar a tag "picture" para quando a tela ficar muito peque ou muito grande trocar a imagem 
+
+-->
