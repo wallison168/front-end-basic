@@ -49,6 +49,7 @@ header{
 header > h1{
     color: white;
     font-family: var(--fonte-destaque);
+    font-weight: normal;
     padding-top: 20px;
     margin-bottom: 15px;
     font-size: 3em;
@@ -101,10 +102,13 @@ main{
 main h1{
     color: var(--cor5);
     font-family:var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2{
     font-family:var(--fonte-android);
+    font-weight: normal;
     color: var(--cor4);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor1), transparent);
@@ -143,6 +147,22 @@ main img{
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+#video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57.5%;
+    position: relative;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside{
@@ -184,4 +204,6 @@ footer a:hover{
 }
 
 /*Para definirmos uma variavel utilizamos o operador ("--") e declaramos o nome da variaves logo apos o operador, dentro dessa variavel definimos formatações css pre definidas para facilitar o uso do codigo.
-Declaramos variaveis em css para facilitar na hora de declarar certas formatações assim como no exemplo acima definido dentro da classe ":root" utilizamos as variaveis para facilitar a chamada das paletas de cores a serem aplicadas dentro do site */
+Declaramos variaveis em css para facilitar na hora de declarar certas formatações assim como no exemplo acima definido dentro da classe ":root" utilizamos as variaveis para facilitar a chamada das paletas de cores a serem aplicadas dentro do site e as fontes*/
+
+/*No caso do video foi nescessario definir tanto dentro da "div" como dento do proprio "iframe" o parametro css "position" sendo que um recebeu o valor "relativo" e o outro recebeu o valor "absoluto", ao fazer isso acabou bagunçando a formatação nesse caso foi nescessario colocar dentro da "div" um "padding-bottom" de "50%", apos isso para centralizar o video e o deixar responsivo a formatação nescessaria foi definida dentro do "iframe"*/
