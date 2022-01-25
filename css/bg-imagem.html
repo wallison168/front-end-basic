@@ -11,11 +11,11 @@
             width: 300px;
             height: 300px;
             display: inline-block;
-            background-color: rgba(32, 31, 31, 0.616);
-            margin-right: 10px;
+            background-color: rgba(54, 54, 54, 0.651);
         }
         #fd1{
             background-color: blue;
+            margin-left: 200px;
         }
         #fd2{
             background-image: linear-gradient(to left, orange, red);
@@ -23,29 +23,85 @@
         #fd3{
             background-image: url('../img/bg/wallpaper001.jpg');
         }
+        #fd4{
+            display: block;
+            width: 600px;
+            margin: auto;
+            background-image: url('https://marquesfernandes.com/wp-content/uploads/2019/12/1_63syQknfVJVtzc8BFUwMLw.png');
+        }
+        #rep1{
+            background-image: url('../img/bg/pattern001.png');
+            background-repeat: repeat;
+        }
+        #rep2{
+            background-image: url('../img/bg/pattern001.png');
+            background-repeat: no-repeat;
+        }
+        #rep3{
+            background-image: url('../img/bg/pattern001.png');
+            background-repeat: repeat-x;
+        }
+        #rep4{
+            background-image: url('../img/bg/pattern001.png');
+            background-repeat: repeat-y;
+        }
     </style>
     <title>Imagem no fundo</title>
 </head>
 <body>
 
-    <div class="fundo" id="fd1">
+    <h1 style="text-align: center;">Trabalhando com Background</h1><br><hr>
 
+    <p>
+        Podemos modificar o plano de fundo da de uma pagina "background" de 3 formas diferentes. <br><br>
+        1º <strong>background-color:</strong> A forma padrão basicamente definimos uma cor simples para representar o plano de fundo da pagina. <br><br>
+        2º <strong>background-image: linear-gradient()</strong> = Nesse caso definimos um aspecto de degrade no plano de fundo da pagina. <br><br>
+        3º <strong>background-image: url('')</strong> = nesse caso definimos uma imagem para o plano de fundo da pagina. <br><br>
+
+        <strong>Obs:</strong> pode-se inserir uma imagem de 2 formas no plano de fundo de uma pagina. <br><br>
+
+        1º <strong>Imagem baixada</strong> : basicamente passamos a "url" do arquivo de imagem a qual foi baixada e se encontra dentro do seu dominio. <br><br>
+        2º <strong>Arquivo externo</strong> : basicamente esse metodo consiste em pegar a "url" de um arquivo de imagem externo ou seja que não esteja dentro do seu dominio. <br><br>
+
+        <strong>EX</strong>: A "div-1" representa o metodo <strong>"background-color:"</strong>, ja a "div-2" reprenseta o metodo <strong>"background-image: linear-gradient()"</strong> a "div-3" reprenseta o metodo <strong>"background-image: url('')"</strong> de um arquivo baixado ja a "div-4" representa o metodo <strong>"background-image: url('')"</strong> porem de um arquivo externo.
+    </p><br>
+
+    <div class="fundo" id="fd1">
+        
     </div>
     <div class="fundo" id="fd2">
-
+    
     </div>
+        
     <div class="fundo" id="fd3">
-
+        
     </div>
+
+    <hr>
+
+    <div class="fundo" id="fd4">
+        
+    </div>
+
+    <hr>
+
+    <p>
+        No caso do parametro <strong>"background"</strong> existem algumas formatação referentes a imagem. <br><br>
+
+        1º <strong>background-repeat:</strong> = Basicamente esse parametro e responsavel por definir se a imagem vai repetir no plano de fundo ou não e é possivel definir em qual eixo a imagem ira repetir atravez desse paremetro, esse parametro recebe alguns valores. <br><br>
+
+        - <strong>repeat</strong> : basicamente esse e o valor padrão definido pelo "html" ou seja com esse valor ele ira repetir a imagem no plano de fundo. <br>- <strong>no-repeat</strong> : basicamente esse valor impede que a imagem se peita dentro do plano de fundo. <br>
+        - <strong>repeat-x</strong> : basicamente esse valor faz com que a imagem se repita no eixo "x" da pagina ou seja na horizontal. <br>
+        - <strong>repeat-y</strong> : basicamente esse valor faz com que a imagem se repita no eixo "y" da pagina ou seja na vertical. <br><br>
+
+        <strong>EX:</strong> Difinindo os 4 valores do parametro "background-repeat" seguindo a ordem definida acima. <br>
+
+    </p>
+
+    <div class="fundo" id="rep1"></div>
+    <div class="fundo" id="rep2"></div>
+    <div class="fundo" id="rep3"></div>
+    <div class="fundo" id="rep4"></div>
 
 </body>
 </html>
-
-<!--
- Basicamente para inserirmos uma imagem dentro do palno de fundo do site o seja dentro do "background"
-e nescessario chamar o parametro css ("background-image: url('')") dentro desse parametro deve-se colocar o endereço da imagem que deseja colocar no fundo da pagina
--->
-
-<!-- 
-No codigo do "style" definido acima definimos 3 formas diferentes de modificar o fundo da pagina ou seja 3 formas diferentes de se modificar o background
--->
