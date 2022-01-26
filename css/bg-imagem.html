@@ -4,48 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .fundo{
-            border: 2px solid black;
-            border-radius: 10px;
-            width: 300px;
-            height: 300px;
-            display: inline-block;
-            background-color: rgba(54, 54, 54, 0.651);
-        }
-        #fd1{
-            background-color: blue;
-            margin-left: 200px;
-        }
-        #fd2{
-            background-image: linear-gradient(to left, orange, red);
-        }
-        #fd3{
-            background-image: url('../img/bg/wallpaper001.jpg');
-        }
-        #fd4{
-            display: block;
-            width: 600px;
-            margin: auto;
-            background-image: url('https://marquesfernandes.com/wp-content/uploads/2019/12/1_63syQknfVJVtzc8BFUwMLw.png');
-        }
-        #rep1{
-            background-image: url('../img/bg/pattern001.png');
-            background-repeat: repeat;
-        }
-        #rep2{
-            background-image: url('../img/bg/pattern001.png');
-            background-repeat: no-repeat;
-        }
-        #rep3{
-            background-image: url('../img/bg/pattern001.png');
-            background-repeat: repeat-x;
-        }
-        #rep4{
-            background-image: url('../img/bg/pattern001.png');
-            background-repeat: repeat-y;
-        }
-    </style>
+    <link rel="stylesheet" href="externo/bg-img.css">
     <title>Imagem no fundo</title>
 </head>
 <body>
@@ -102,6 +61,32 @@
     <div class="fundo" id="rep2"></div>
     <div class="fundo" id="rep3"></div>
     <div class="fundo" id="rep4"></div>
+    
+    <br><hr>
+
+    <p>
+        2º <strong>background-position:</strong> = Basicamente esse parametro defini a posição da qual a imagem inserida no plano de fundo vai ficar na pagina, esse parametro recebe 9 valores que definem uma posição diferente da qual a imagem vai ficar<br><br>
+
+        - <strong>left top</strong> : basicamente esse valor vai definir a posição da imagem no canto superior esquerdo. <br>
+        - <strong>center top</strong> : basicamente esse valor vai definir a posição da imagem na parte superior no centro. <br>
+        - <strong>right top</strong> : basicamente esse valor vai definir a posição da imagem no canto superior direito. <br>
+        - <strong>left center</strong> : basicamente esse valor vai definir a posição da imagem na parte central esquerdo. <br>
+        - <strong>center center</strong> : basicamente esse valor vai definir a posição da imagem na parte central no centro do bloco. <br>
+        - <strong>right center</strong> : basicamente esse valor vai definir a posição da imagem na parte central direita. <br>
+        - <strong>left bottom</strong> : basicamente esse valor vai definir a posição da imagem na parte inferior esquerdo. <br>
+        - <strong>center bottom</strong> : basicamente esse valor vai definir a posição da imagem na parte inferior no centro. <br>
+        - <strong>right bottom</strong> : basicamente esse valor vai definir a posição da imagem na parte inferior direito. <br>
+    </p>
+
+    <div class="block fundo" id="qd1"></div>
+    <div class="block fundo" id="qd2"></div>
+    <div class="block fundo" id="qd3"></div><br>
+    <div class="block fundo" id="qd4"></div>
+    <div class="block fundo" id="qd5"></div>
+    <div class="block fundo" id="qd6"></div><br>
+    <div class="block fundo" id="qd7"></div>
+    <div class="block fundo" id="qd8"></div>
+    <div class="block fundo" id="qd9"></div>
 
 </body>
 </html>

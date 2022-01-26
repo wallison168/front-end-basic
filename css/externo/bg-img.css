@@ -1,0 +1,75 @@
+.fundo{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: rgba(54, 54, 54, 0.651);
+}
+#fd1{
+    background-color: blue;
+    margin-left: 200px;
+}
+#fd2{
+    background-image: linear-gradient(to left, orange, red);
+}
+#fd3{
+    background-image: url('../../img/bg/wallpaper001.jpg');
+}
+#fd4{
+    display: block;
+    width: 600px;
+    margin: auto;
+    background-image: url('https://marquesfernandes.com/wp-content/uploads/2019/12/1_63syQknfVJVtzc8BFUwMLw.png');
+}
+#rep1{
+    background-image: url('../../img/bg/pattern001.png');
+    background-repeat: repeat;
+}
+#rep2{
+    background-image: url('../../img/bg/pattern001.png');
+    background-repeat: no-repeat;
+}
+#rep3{
+    background-image: url('../../img/bg/pattern001.png');
+    background-repeat: repeat-x;
+}
+#rep4{
+    background-image: url('../../img/bg/pattern001.png');
+    background-repeat: repeat-y;
+}
+.block{
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url('../../img/bg/pattern001.png');
+    background-repeat: no-repeat;
+}
+#qd1{
+    background-position: left top;
+}
+#qd2{
+    background-position: center top;
+}
+#qd3{
+    background-position: right top;
+}
+#qd4{
+    background-position: left center;
+}
+#qd5{
+    background-position: center center;
+}
+#qd6{
+    background-position: right center;
+}
+#qd7{
+    background-position: left bottom;
+}
+#qd8{
+    background-position: center bottom ;
+}
+#qd9{
+    background-position: right bottom;
+}
