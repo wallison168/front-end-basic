@@ -73,3 +73,9 @@
 #qd9{
     background-position: right bottom;
 }
+#size{
+    display: block;
+    margin: auto;
+    background-image: url('../../img/bg/pattern001.png');
+    background-size: cover;
+}
