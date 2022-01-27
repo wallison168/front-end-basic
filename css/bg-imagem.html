@@ -128,5 +128,24 @@
         <strong>Ex:</strong> <code>background: black url('../img/bg/pattern001.png') center center no-repeat cover fixed;</code>
     </p>
 
+    <br><hr>
+
+    <h2>Centralizando uma box Verticalmente</h2>
+
+    <p>
+        Basicamente utilizamos o parametro css <strong>margin: auto;</strong> para centralizar as box ou seja os conteudos de uma caixa horizontalmente, entretanto esse parametro não centraliza a box Verticalmente, para isso e nescessario utilizamos outros parametros para definir essa formatação. 
+        
+        <br><br>
+
+        <strong>Obs:</strong> Para realizar a formatação de centralização vertical da box e nescessario definir os seguintes parametros na hordem definida logo a baixo. <br><br>
+
+        - 1º <strong>position: absolute;</strong> = basicamente ao utilizarmos esse parametro com o valor "absolute" ele define que a box permanecerar no local definido sem sofrer alterações ao mudar o tamanho da pagina. <br><br>
+
+        - 2º <strong>left: 50%;</strong> = basicamente esse parametro com o valor de "50%" defini que a box ficara com um espaçamento do canto esquerde de 50%. <br><br>
+
+        - 3º <strong>top: 50%;</strong> = basicamente esse parametro com o valor de "50%" defini que a box ficara com um espaçamento na parte superior de 50%. <br><br>
+
+        - 4º <strong>transform: translate(-50%, -50%);</strong> = ao utilizar os parametros ("left" e "top") ele centraliza a box verticalmente porem o ponto de partida da box fica com o foco no canto superior esquerdo da box, para realizar uma centralização correta e nescesario definir o ponto de partida da box no centro da propria box, para isso utilizamos o parametro ("transform: translate(-50%, -50%);").
+    </p>
 </body>
 </html>
