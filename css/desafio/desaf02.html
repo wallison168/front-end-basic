@@ -23,77 +23,90 @@
             background-color: gray;
             color: white;
         }
+        #respons{
+            overflow-x: auto;
+        }
     </style>
     <title>Desafio-02</title>
 </head>
 <body>
     <h1>Desafio-02 "Media escolar"</h1>
 
-    <table>
+    <div id="respons">
+        <table>
+            <caption>Notas e Exames Finais</caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="color" rowspan="2">Área</th>
+                    <th scope="col" class="color" rowspan="2">Disciplinas</th>
+                    <th scope="colgroup" class="color" colspan="2">Notas</th>
+                    <th scope="col" class="color" rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="color" >Nota 1</th>
+                    <th scope="col" class="color" >Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td>Matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color" colspan="4">Média Exatas</th>
+                    <td class="color">0.0</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td>Historia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color" colspan="4">Média Humanas</th>
+                    <td class="color">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <caption>Notas e Exames Finais</caption>
+    <p>
+        Para jerar um efeito de responsividade em uma tabela e nescessario invelopar a tabela por inteiro dentro da tag <strong>Div</strong> apos isso basta chamar o paramtro css "overflow", o parametro overflow pode receber 3 valores diferentes. <br><br>
 
-        <thead>
-            <tr>
-                <th scope="col" class="color" rowspan="2">Área</th>
-                <th scope="col" class="color" rowspan="2">Disciplinas</th>
-                <th scope="colgroup" class="color" colspan="2">Notas</th>
-                <th scope="col" class="color" rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th scope="col" class="color" >Nota 1</th>
-                <th scope="col" class="color" >Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="rowgroup" rowspan="4">Exatas</th>
-                <td>Matematica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Fisica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Quimica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <th scope="row" class="color" colspan="4">Média Exatas</th>
-                <td class="color">0.0</td>
-            </tr>
-            <tr>
-                <th scope="rowgroup" rowspan="2">Humanas</th>
-                <td>Historia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <th scope="row" class="color" colspan="4">Média Humanas</th>
-                <td class="color">0.0</td>
-            </tr>
-        </tbody>
-    </table>
+        1º <strong>overflow</strong> : Basicamente com esse parametro podemos definir a responsividade da tabela tanto no eixo "y" como no eixo "x", dentro desse parametro bastas utilizar o valor "auto" com esse valor a tabela tera um efeito reponsivo tanto no eixo "y" como no eixo "x". <br><br>
+
+        2º <strong>overflow-y</strong> : Basicamente com esse parametro definimos um efeito responsivel no eixo "y" ou seja na horizontal da pagina, para isso e nescessario utilizar o valor "auto". <br><br>
+
+        3º <strong>overflow-x</strong> : Basicamente com esse parametro definimos um efeito responsivel no eixo "x" ou seja na vertical da pagina, para isso e nescessario utilizar o valor "auto". <br><br>
+    </p>
 </body>
 </html>
 
