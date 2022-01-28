@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+        tr{
+            margin: 0px;
+            text-align: center;
+            padding: 10px;
+        }
+        .borda{
+            border: 1.5px solid black;
+        }
+    </style>
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Trabalhando com tabelas</h1>
+
+    <p>
+        Basicamente utilizamos tabelas dentro de um site para mostrarmos conteudos cadastrados como itens de uma loja ou coisas desse tipos, elementos que tem a nescessidade de ser inseridos dentro de uma tabela para facilitar pro usuario a compreender melhor o conteudo. <br><br>
+
+        As tabelas possuem uma hierarquia a ser seguidas definidos por tags <br>
+
+        1º <strong>table</strong> : basicamente esse e o escopo principal de uma tabela basicamente os componentes de uma tabela são definidos dentro dessa tag. <br><br>
+        2º <strong>tr</strong> : basicamente essa tag definie a linha da tabela e deve ser definida dentro da tag "table" ou seja basicamente ela e uma tag filho da tag "table". <br><br>
+        3º <strong>th</strong> : basicamente essa tag define o cabeçalho da tabela e deve ser definida dentro da tag "tr" ou seja ela e uma tag filho da tag "tr". <br><br>
+        4º <strong>td</strong> : basicamente essa tag define o conteudo a ser inserido dentro da tabela e deve ser inserido dentro da tag "tr" ou seja ela e uma tag filho da tag "tr". <br><br>
+
+        <strong>EX:</strong> Definido uma tabela basica 
+    </p><hr>
+
+    <table class="borda">
+        <tr>
+            <th class="borda">nome</th>
+            <th class="borda">idade</th>
+            <th class="borda">sexo</th>
+        </tr>
+        <tr>
+            <td class="borda">wallison</td>
+            <td class="borda">21</td>
+            <td class="borda">masculino</td>
+        </tr>
+    </table>
+
+    <h2>Estilização para tabelas</h2>
+    <p>
+
+        Existem algumas estilizações para tabelas para facilitar na formatação dos elementos. <br><br>
+
+        1º <strong>border-collapse:</strong> = basicamente essa formatação e utilizada para evitar separações das bordas da tabela ou seja ao inserir uma borda na tabelo o html por padrão ja define o valor desse paramtro como "separate" e isso causa uma separação entre as bordas, para que as borda possão ficar juntas igual de uma tabela e nescessario utilizar o valor nesse parametro de "collapse" isso faz com que as bordas possão ficar juntas. <br><br>
+    </p>
+</body>
+</html>
