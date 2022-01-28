@@ -5,17 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        table{
+
+        /*Formatação tabela pequena*/
+
+        #tamanho{
             width: 300px;
             border-collapse: collapse;
         }
-        tr{
+        .alinhamento{
             margin: 0px;
             text-align: center;
+            vertical-align: bottom;
             padding: 10px;
         }
         .borda{
             border: 1.5px solid black;
+        }
+
+        /*Formatação tabela grande*/
+
+        #tb{
+            width: 500px;
+            background-color: gray;
+            color: white;
+            box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.425);
+            border-collapse: collapse;
+        }
+        .lin{
+            text-align: center;
+        }
+        .cab{
+            background-color: rgba(34, 31, 31, 0.5);
+            border: 1px solid black;
+        }
+        .cont{
+            border: 1px solid black;
+        }
+        #rod1{
+            border: 1px solid black;
+        }
+        #rod2{
+            border: 1px solid black;
         }
     </style>
     <title>Tabela</title>
@@ -26,7 +56,9 @@
     <p>
         Basicamente utilizamos tabelas dentro de um site para mostrarmos conteudos cadastrados como itens de uma loja ou coisas desse tipos, elementos que tem a nescessidade de ser inseridos dentro de uma tabela para facilitar pro usuario a compreender melhor o conteudo. <br><br>
 
-        As tabelas possuem uma hierarquia a ser seguidas definidos por tags <br>
+        As tabelas possuem uma hierarquia a ser seguidas definidos por tags <br><br>
+
+        <strong>Hierarquia para tabelas pequenas</strong> <br><br>
 
         1º <strong>table</strong> : basicamente esse e o escopo principal de uma tabela basicamente os componentes de uma tabela são definidos dentro dessa tag. <br><br>
         2º <strong>tr</strong> : basicamente essa tag definie a linha da tabela e deve ser definida dentro da tag "table" ou seja basicamente ela e uma tag filho da tag "table". <br><br>
@@ -36,25 +68,123 @@
         <strong>EX:</strong> Definido uma tabela basica 
     </p><hr>
 
-    <table class="borda">
-        <tr>
+    <table class="borda" id="tamanho">
+        <tr class="alinhamento">
             <th class="borda">nome</th>
             <th class="borda">idade</th>
             <th class="borda">sexo</th>
         </tr>
-        <tr>
+        <tr class="alinhamento">
             <td class="borda">wallison</td>
             <td class="borda">21</td>
             <td class="borda">masculino</td>
         </tr>
     </table>
 
-    <h2>Estilização para tabelas</h2>
-    <p>
+    <h2>Hierarquia para tabelas grandes</h2>
 
+    <p>
+        Basicamente a hierarquia para tabelas grandes e similar a das tabelas pequenas porem possue alguns diferenciais. <br>
+        A hierarquia para tabelas grandes possuem uma semantica mais organizada ou seja o conteudo fica mais indentado. <br><br>
+
+        1º <strong>table</strong> : como todo tipo de tabela para definir e nescessario inserir os elementos dentro da tag "table". <br><br>
+
+        2º <strong>thead</strong> : basicamente em tabelas grandes utilizamos o "thead" para definir o cabeçalho, basicamente a tag "thead" serve como o escopo da tabela referenciando o cabeçalho, essa tag pode receber 3 tags da tabela ("tr", "th" e "td"). <br><br>
+
+        3º <strong>tbody</strong> : basicamente em tabelas grandes utilizamos o "tbody" para definir o corpo da tabela, ou seja a tag "tbody" serve como o escopo da tabela referenciando o corpo da aplicação onde os elementos são inseridos dentro da tabela, essa tag pode receber 3 tags da tabela ("tr", "th" e "td"). <br><br>
+
+        4º <strong>tfoot</strong> : basicamente em tabelas grandes utilizamos o "tfoot" para definir o rodapé da tabela, ou seja a tag "tfoot" serve como o escopo da tabela referenciando o rodapé da tabela, essa tag pode receber 3 tags da tabela ("tr", "th" e "td"). <br><br>
+
+        <strong>Ex:</strong> Definindo uma tabela grande
+    </p>
+
+    <table id="tb">
+        <thead>
+            <tr class="lin">
+                <th class="cab">Posição</th>
+                <th class="cab">Estado</th>
+                <th class="cab">População</th>
+                <th class="cab">Porcentagem %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="lin">
+                <td class="cont">1</td>
+                <td class="cont">São Paulo</td>
+                <td class="cont">46 649 132</td>
+                <td class="cont">21,9%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">2</td>
+                <td class="cont">Minas Gerais</td>
+                <td class="cont">21 411 923</td>
+                <td class="cont">10,1%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">3</td>
+                <td class="cont">Rio de Janeiro</td>
+                <td class="cont">17 463 349</td>
+                <td class="cont">8,2%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">4</td>
+                <td class="cont">Bahia</td>
+                <td class="cont">14 985 284</td>
+                <td class="cont">7,1%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">5</td>
+                <td class="cont">Paraná</td>
+                <td class="cont">11 597 484</td>
+                <td class="cont">5,4%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">6</td>
+                <td class="cont">Rio Grande do Sul</td>
+                <td class="cont">11 466 630</td>
+                <td class="cont">5,4%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">7</td>
+                <td class="cont">Pernambuco</td>
+                <td class="cont">9 674 793</td>
+                <td class="cont">4,5%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">8</td>
+                <td class="cont">Ceará</td>
+                <td class="cont">9 240 580</td>
+                <td class="cont">4,3%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">9</td>
+                <td class="cont">Pará</td>
+                <td class="cont">8 777 124</td>
+                <td class="cont">4,1%</td>
+            </tr>
+            <tr class="lin">
+                <td class="cont">10</td>
+                <td class="cont">Santa Catarina</td>
+                <td class="cont">7 338 473</td>
+                <td class="cont">3,4%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="rod1">Total habitantes</th>
+                <td id="rod2">000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Estilização para tabelas</h2>
+
+    <p>
         Existem algumas estilizações para tabelas para facilitar na formatação dos elementos. <br><br>
 
         1º <strong>border-collapse:</strong> = basicamente essa formatação e utilizada para evitar separações das bordas da tabela ou seja ao inserir uma borda na tabelo o html por padrão ja define o valor desse paramtro como "separate" e isso causa uma separação entre as bordas, para que as borda possão ficar juntas igual de uma tabela e nescessario utilizar o valor nesse parametro de "collapse" isso faz com que as bordas possão ficar juntas. <br><br>
+        
+        2º <strong>vertical-align</strong> : basicamente esse parametro e similar ao parametro "text-align" o seu diferencial e que ao invez dele alinha os elementos horizontalmente assim como o "text-align" ele realiza o alinhamento verticalmente. <br><br>
     </p>
 </body>
 </html>
