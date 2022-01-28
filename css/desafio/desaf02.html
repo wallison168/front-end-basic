@@ -4,10 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        tr, td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+        td{
+            padding: 10px;
+        }
+        th{
+            font-weight: bolder;
+        }
+        .color{
+            background-color: gray;
+            color: white;
+        }
+    </style>
     <title>Desafio-02</title>
 </head>
 <body>
-    
-    
+    <h1>Desafio-02 "Media escolar"</h1>
+
+    <table>
+
+        <caption>Notas e Exames Finais</caption>
+
+        <thead>
+            <tr>
+                <th scope="col" class="color" rowspan="2">Área</th>
+                <th scope="col" class="color" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" class="color" colspan="2">Notas</th>
+                <th scope="col" class="color" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="color" >Nota 1</th>
+                <th scope="col" class="color" >Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="color" colspan="4">Média Exatas</th>
+                <td class="color">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="color" colspan="4">Média Humanas</th>
+                <td class="color">0.0</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
+
+<!--
+    Basicamente definimod dentro das tags "th" o escopo do cabeçalho atravez do paramtro "scop", o parametro scop possue 4 valores
+    1- col: defini que o cabeçalho faz referencia a coluna definida
+    2- colgroup: defini que o cabeçalho faz referencia a um grupo de colunas definidas
+    3 - row: defini que o cabeçalho faz referencia a linha definida
+    4 - rowgroup: defini que o cabeçalho faz referencia a um grupo de linhas definidas
+-->
